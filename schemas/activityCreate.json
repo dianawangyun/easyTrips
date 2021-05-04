@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "properties": {
+    "tripId": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 50
+    },
+    "activityName": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "startTime": {
+      "type": "string"
+    },
+    "endTime": {
+      "type": "string"
+    },
+    "location": {
+      "type":"string",
+      "maxLength": 100
+    },
+    "latitude": {
+      "type":"number"
+    },
+    "longitude": {
+      "type":"number"
+    },
+    "comment": {
+      "type":"string"
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "tripId",
+    "activityName"
+  ]
+}
