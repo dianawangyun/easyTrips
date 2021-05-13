@@ -35,16 +35,16 @@ describe("GET /user/:username", function () {
                 userId: expect.any(String),
                 trips: [
                     {
-                        tripId: testTripIds[0],
-                        tripName: "Austin 1 Day",
-                        startDate: "2020-01-23",
-                        endDate: "2020-01-23",
-                    },
-                    {
                         tripId: testTripIds[1],
                         tripName: "Houston 1 Day",
                         startDate: "2021-01-01",
                         endDate: "2021-01-01",
+                    },
+                    {
+                        tripId: testTripIds[0],
+                        tripName: "Austin 1 Day",
+                        startDate: "2020-01-23",
+                        endDate: "2020-01-23",
                     },
                 ],
             },
@@ -66,7 +66,7 @@ describe("GET /user/:username", function () {
 
 /************************************** PATCH /users/:username */
 
-describe("PATCH /users/:username", () => {
+describe("PATCH /user/:username", () => {
     test("works for same user", async function () {
         const resp = await request(app)
             .patch(`/user/u1`)

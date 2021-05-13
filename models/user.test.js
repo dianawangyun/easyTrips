@@ -133,13 +133,13 @@ describe("get", function () {
                     endDate: expect.any(String),
                     startDate: expect.any(String),
                     tripId: expect.any(String),
-                    tripName: "Austin 1 Day",
+                    tripName: "Dallas 2 Days",
                 },
                 {
                     endDate: expect.any(String),
                     startDate: expect.any(String),
                     tripId: expect.any(String),
-                    tripName: "Dallas 2 Days",
+                    tripName: "Austin 1 Day",
                 },
             ],
         });

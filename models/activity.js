@@ -1,7 +1,7 @@
 "use strict";
 
 const db = require("../db");
-const { BadRequestError, NotFoundError } = require("../expressError");
+const { NotFoundError } = require("../expressError");
 const { sqlForPartialUpdate } = require("../helpers/sql");
 const { v4: uuid } = require("uuid");
 
@@ -119,6 +119,7 @@ class Activity {
 
     static async update(activityId, data) {
         const { setCols, values } = sqlForPartialUpdate(data, {
+            activityName: "activity_name",
             activityId: "activity_id",
             startTime: "start_time",
             endTime: "end_time",

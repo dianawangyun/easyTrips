@@ -110,7 +110,8 @@ class User {
             to_char(start_date, 'YYYY-MM-DD') as "startDate",
             to_char(end_date, 'YYYY-MM-DD') as "endDate"
             FROM trips
-            WHERE user_id=$1`,
+            WHERE user_id=$1
+            ORDER BY start_date DESC`,
             [user.userId]
         );
 
@@ -153,7 +154,6 @@ class User {
 
         const result = await db.query(querySql, [...values, username]);
         const user = result.rows[0];
-        // console.log("user", user);
         if (!user) throw new NotFoundError(`No user: ${username}`);
 
         delete user.password;
