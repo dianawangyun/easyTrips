@@ -30,6 +30,18 @@ https://github.com/dianawangyun/easyTripsFrontend
    1. Open Chrome or other browser, type in "localhost:3000" in the address bar.
    2. Start planning your trip.
 
+## How to Use
+
+1. Once logged in, the user can add new trips.
+
+<img src="https://live.staticflickr.com/65535/51487985590_69ac938f24_o.gif" width="640" height="480" alt="newTrip">
+
+2. Click on one of the trips to check details, make updates to the trip and add activities.
+
+<img src="https://live.staticflickr.com/65535/51488684214_49c09b9b76_o.jpg" width="1024" height="487" alt="Activity">
+
+
+
 ## **Test**
 
 The following works for both Backend and Frontend:
